@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/wightTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Weight in Kg"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="30dp"
+        />
+    <EditText
+        android:id="@+id/weightTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="65"
+        android:layout_below="@+id/wightTV"
+        android:layout_marginHorizontal="30dp"
+        />
+    <TextView
+        android:id="@+id/heightTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Height in metre"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/weightTxt"
+        android:layout_marginHorizontal="30dp"
+        />
+    <EditText
+        android:id="@+id/heightTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="1.71"
+        android:layout_below="@+id/heightTV"
+        android:layout_marginHorizontal="30dp"
+        />
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightTxt"
+        android:gravity="center"
+        android:text="Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        />
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitBtn"
+        android:textSize="32sp"
+        android:layout_margin="20dp"
+        />
+
+
+</RelativeLayout>
