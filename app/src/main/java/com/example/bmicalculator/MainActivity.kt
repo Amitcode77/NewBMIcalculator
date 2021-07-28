@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         submitBtn.setOnClickListener {
             var weight: Double = weightTxt.text.toString().toDouble()
             var height: Double = weightTxt.text.toString().toDouble()
-            var bmi = weight/(height*height)
+            var bmi:Double = weight/(height*height)
             resultText.text = "Your Body mass Index is $bmi"
 
             if(bmi>23)
